@@ -2,7 +2,7 @@
 
 ## Features
 
--   Comes with @maritime-fun-group/svelte-core.
+-   Comes with the `@maritime-fun-group/svelte-core` package for custom components.
 -   Pre-configured Dockerfile.
 -   Logo and spinner images (for `Navbar` and `Loading` components).
 -   Favicon of the MFG logo.
@@ -13,7 +13,7 @@
 Run the following commands below to clone into a directory. Replace `APPNAME` with the app name/directory to clone it into (or use `.` for current directory and skip the `cd` command).
 
 ```bash
-npx degit isaacmfg/svelte-template APPNAME
+npx degit isaacmfg/svelte-template#main APPNAME
 cd APPNAME
 ```
 
