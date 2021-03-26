@@ -9,7 +9,7 @@
         "validate": "svelte-check"
     },
     "devDependencies": {
-        "@maritime-fun-group/svelte-core": "^0.0.3",
+        "@maritime-fun-group/svelte-core": "^0.0.4",
         "@rollup/plugin-commonjs": "^17.0.0",
         "@rollup/plugin-node-resolve": "^11.0.0",
         "@rollup/plugin-typescript": "^8.0.0",
