@@ -1,0 +1,29 @@
+# Versioning
+
+Replace all {VERSION} text with the current version.
+Current version: 0.0.1.
+
+# Remove
+
+docker stop mfg-application
+docker rm mfg-application
+
+# Combined remove (only if no need of looking up logs after stopping).
+
+docker rm -f mfg-application
+
+# Docker login (needed for push).
+docker login -u isaacmfg
+
+# Build & Upload to Docker Hub
+
+docker build -t isaacmfg/projects:mfg-application{VERSION} .
+docker push isaacmfg/projects:mfg-application{VERSION}
+
+# Pull
+
+docker pull isaacmfg/projects:mfg-application{VERSION}
+
+# Run
+
+docker run --name mfg-application -dp 5000:80 isaacmfg/projects:mfg-application{VERSION}
